@@ -9,7 +9,7 @@ app.get("/get-directions", async (req, res) => {
 
   console.log("Query parameters:", { start, goal, option });
 
-  const url = "https://naveropenapi.apigw.ntruss.com/map-direction/v1/driving";
+  const url = "https://maps.apigw.ntruss.com/map-direction/v1/driving";
   const headers = {
     "X-NCP-APIGW-API-KEY-ID": process.env.NAVER_CLIENT_ID,
     "X-NCP-APIGW-API-KEY": process.env.NAVER_CLIENT_SECRET,
